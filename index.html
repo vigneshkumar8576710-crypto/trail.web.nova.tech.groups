@@ -16,14 +16,15 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
         body { font-family: 'Inter', sans-serif; background-color: #0F0F0F; color: white; }
         
-        .neon-glow { text-shadow: 0 0 15px rgba(57, 255, 20, 0.6); }
+        /* Updated to Neon Red Glow */
+        .neon-glow { text-shadow: 0 0 15px rgba(255, 49, 49, 0.8); }
         .bg-glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); transition: all 0.4s ease; }
-        .bg-glass:hover { background: rgba(255, 255, 255, 0.08); transform: translateY(-10px); border-color: #39FF14; }
+        .bg-glass:hover { background: rgba(255, 255, 255, 0.08); transform: translateY(-10px); border-color: #FF3131; }
         
-        .btn-neon { background-color: #39FF14; color: black; transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-        .btn-neon:hover { background-color: #32e612; box-shadow: 0 0 25px #39FF14; transform: scale(1.05); }
+        /* Neon Red Button */
+        .btn-neon { background-color: #FF3131; color: white; transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .btn-neon:hover { background-color: #e62b2b; box-shadow: 0 0 25px #FF3131; transform: scale(1.05); }
         
-        /* Smooth Fade for images */
         .hero-zoom { animation: slowZoom 20s infinite alternate; }
         @keyframes slowZoom { from { transform: scale(1); } to { transform: scale(1.1); } }
     </style>
@@ -32,57 +33,56 @@
 
     <nav class="fixed w-full z-[100] bg-black/80 border-b border-white/10 px-6 py-4 flex justify-between items-center backdrop-blur-md">
         <div class="text-2xl font-black tracking-tighter italic" data-aos="fade-right">
-            POWER <span class="text-[#39FF14]">SMACK</span>
+            POWER <span class="text-[#FF3131]">SMACK</span>
         </div>
         <div class="hidden md:flex space-x-8 font-medium">
-            <a href="#home" class="hover:text-[#39FF14] transition">Home</a>
-            <a href="#about" class="hover:text-[#39FF14] transition">The Edge</a>
-            <a href="#results" class="hover:text-[#39FF14] transition">Results</a>
-            <a href="#contact" class="hover:text-[#39FF14] transition">Location</a>
+            <a href="#home" class="hover:text-[#FF3131] transition text-gray-300">Home</a>
+            <a href="#about" class="hover:text-[#FF3131] transition text-gray-300">The Edge</a>
+            <a href="#results" class="hover:text-[#FF3131] transition text-gray-300">Results</a>
+            <a href="#contact" class="hover:text-[#FF3131] transition text-gray-300">Location</a>
         </div>
-        <a href="tel:09500029243" class="btn-neon px-5 py-2 rounded-full font-bold text-sm" data-aos="fade-left">JOIN NOW</a>
+        <a href="tel:09500029243" class="btn-neon px-5 py-2 rounded-full font-bold text-sm uppercase tracking-wider" data-aos="fade-left">Join Now</a>
     </nav>
 
     <section id="home" class="relative h-screen flex items-center justify-center text-center px-4 pt-20 overflow-hidden">
-    <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070" class="hero-zoom w-full h-full object-cover opacity-30" alt="Gym Interior">
-    </div>
-    <div class="absolute inset-0 bg-gradient-to-t from-[#0F0F0F] via-transparent to-black z-1"></div>
-    
-    <div class="relative z-10 max-w-4xl">
-        <h1 class="text-5xl md:text-8xl font-black mb-6 uppercase tracking-tight" data-aos="zoom-y-out" data-aos-delay="200">
-            Thanjavur's <br><span class="text-[#39FF14] neon-glow">Premium</span> Arena
-        </h1>
-        <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="400">
-            4,000 Sq. Ft. of world-class equipment and elite coaching to transform your life.
-        </p>
-        <div class="flex flex-col md:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="600">
-            <a href="https://wa.me/919500029243" class="btn-neon px-10 py-4 rounded-md font-black text-lg uppercase shadow-lg">Get a Free Trial</a>
-            
-            <a href="explore.html" class="border border-white/20 px-10 py-4 rounded-md font-black text-lg uppercase hover:bg-white/10 transition backdrop-blur-sm">Explore Studio</a>
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070" class="hero-zoom w-full h-full object-cover opacity-30" alt="Gym Interior">
         </div>
-    </div>
-</section>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0F0F0F] via-transparent to-black z-1"></div>
+        
+        <div class="relative z-10 max-w-4xl">
+            <h1 class="text-5xl md:text-8xl font-black mb-6 uppercase tracking-tight" data-aos="zoom-y-out" data-aos-delay="200">
+                Thanjavur's <br><span class="text-[#FF3131] neon-glow">Premium</span> Arena
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="400">
+                4,000 Sq. Ft. of world-class equipment and elite coaching to transform your life.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="600">
+                <a href="https://wa.me/919500029243" class="btn-neon px-10 py-4 rounded-md font-black text-lg uppercase shadow-lg">Get a Free Trial</a>
+                <a href="explore.html" class="border border-white/20 px-10 py-4 rounded-md font-black text-lg uppercase hover:bg-white/10 transition backdrop-blur-sm">Explore Studio</a>
+            </div>
+        </div>
+    </section>
 
     <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div class="bg-glass p-8 rounded-2xl border border-white/10 text-center" data-aos="fade-up" data-aos-delay="100">
-                <i class="fa-solid fa-expand text-[#39FF14] text-4xl mb-4"></i>
+                <i class="fa-solid fa-expand text-[#FF3131] text-4xl mb-4"></i>
                 <h3 class="text-xl font-bold mb-2">4,000 Sq. Ft.</h3>
                 <p class="text-gray-400 text-sm">The biggest gym space in Thanjavur city.</p>
             </div>
             <div class="bg-glass p-8 rounded-2xl border border-white/10 text-center" data-aos="fade-up" data-aos-delay="200">
-                <i class="fa-solid fa-venus-mars text-[#39FF14] text-4xl mb-4"></i>
+                <i class="fa-solid fa-venus-mars text-[#FF3131] text-4xl mb-4"></i>
                 <h3 class="text-xl font-bold mb-2">Unisex & Secure</h3>
                 <p class="text-gray-400 text-sm">Safe, professional environment for everyone.</p>
             </div>
             <div class="bg-glass p-8 rounded-2xl border border-white/10 text-center" data-aos="fade-up" data-aos-delay="300">
-                <i class="fa-solid fa-dumbbell text-[#39FF14] text-4xl mb-4"></i>
+                <i class="fa-solid fa-dumbbell text-[#FF3131] text-4xl mb-4"></i>
                 <h3 class="text-xl font-bold mb-2">Premium Gear</h3>
                 <p class="text-gray-400 text-sm">Branded and well-maintained equipment.</p>
             </div>
             <div class="bg-glass p-8 rounded-2xl border border-white/10 text-center" data-aos="fade-up" data-aos-delay="400">
-                <i class="fa-solid fa-clock text-[#39FF14] text-4xl mb-4"></i>
+                <i class="fa-solid fa-clock text-[#FF3131] text-4xl mb-4"></i>
                 <h3 class="text-xl font-bold mb-2">Flexible Timing</h3>
                 <p class="text-gray-400 text-sm">No rigid slots. Workout whenever you want.</p>
             </div>
@@ -93,7 +93,7 @@
         <div class="max-w-5xl mx-auto text-center">
             <h2 class="text-4xl font-black mb-12 uppercase" data-aos="fade-down">Led by <span class="text-[#FF3131]">Master Sathish</span></h2>
             <p class="text-xl text-gray-300 mb-8 italic" data-aos="zoom-in" data-aos-delay="200">"We treat you like family, but push you like champions."</p>
-            <div class="flex flex-wrap justify-center gap-6 text-[#39FF14] font-bold text-lg" data-aos="fade-up">
+            <div class="flex flex-wrap justify-center gap-6 text-[#FF3131] font-bold text-lg" data-aos="fade-up">
                 <span class="hover:text-white transition cursor-default">Hari</span>
                 <span class="text-white/20">•</span>
                 <span class="hover:text-white transition cursor-default">Shiva</span>
@@ -108,17 +108,17 @@
     <section id="results" class="py-24 px-6">
         <h2 class="text-3xl font-black text-center mb-16 uppercase italic" data-aos="fade-right">Real Results</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div class="border-l-4 border-[#39FF14] bg-white/5 p-8 hover:bg-white/10 transition" data-aos="flip-left" data-aos-delay="100">
+            <div class="border-l-4 border-[#FF3131] bg-white/5 p-8 hover:bg-white/10 transition" data-aos="flip-left" data-aos-delay="100">
                 <p class="text-lg italic mb-6">"Lost 10kg in 6 months. Best environment!"</p>
-                <h4 class="font-bold text-[#39FF14]">- Karthik S.</h4>
+                <h4 class="font-bold text-[#FF3131]">- Karthik S.</h4>
             </div>
             <div class="border-l-4 border-[#FF3131] bg-white/5 p-8 hover:bg-white/10 transition" data-aos="flip-left" data-aos-delay="200">
                 <p class="text-lg italic mb-6">"Best and safest environment for women fitness."</p>
                 <h4 class="font-bold text-[#FF3131]">- Adhira G.K.</h4>
             </div>
-            <div class="border-l-4 border-[#39FF14] bg-white/5 p-8 hover:bg-white/10 transition" data-aos="flip-left" data-aos-delay="300">
+            <div class="border-l-4 border-[#FF3131] bg-white/5 p-8 hover:bg-white/10 transition" data-aos="flip-left" data-aos-delay="300">
                 <p class="text-lg italic mb-6">"Lost 11kg in 4 months. Highly professional."</p>
-                <h4 class="font-bold text-[#39FF14]">- Syed (Police Dept)</h4>
+                <h4 class="font-bold text-[#FF3131]">- Syed (Police Dept)</h4>
             </div>
         </div>
     </section>
@@ -126,19 +126,19 @@
     <section id="contact" class="py-24 px-6 border-t border-white/10">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
             <div data-aos="fade-right">
-                <h2 class="text-4xl font-black mb-6 uppercase">Visit the <span class="text-[#39FF14]">Studio</span></h2>
+                <h2 class="text-4xl font-black mb-6 uppercase">Visit the <span class="text-[#FF3131]">Studio</span></h2>
                 <p class="text-gray-400 mb-8 text-lg">Indra Nagar Main Road, Serfoji Ground Backside, Thanjavur.</p>
                 <div class="space-y-6">
-                    <a href="tel:09500029243" class="flex items-center gap-4 text-2xl font-bold hover:text-[#39FF14] transition">
-                        <i class="fa-solid fa-phone text-[#39FF14]"></i> 095000 29243
+                    <a href="tel:09500029243" class="flex items-center gap-4 text-2xl font-bold hover:text-[#FF3131] transition">
+                        <i class="fa-solid fa-phone text-[#FF3131]"></i> 095000 29243
                     </a>
-                    <a href="#" class="flex items-center gap-4 text-2xl font-bold hover:text-[#FF3131] transition">
+                    <a href="https://instagram.com/powersmackfitness" class="flex items-center gap-4 text-2xl font-bold hover:text-[#FF3131] transition">
                         <i class="fa-brands fa-instagram text-[#FF3131]"></i> @PowerSmackFitness
                     </a>
                 </div>
             </div>
             <div class="rounded-2xl overflow-hidden h-80 shadow-2xl border border-white/10" data-aos="zoom-in">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.123456789!2d79.137!3d10.787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDQ3JzEzLjIiTiA3OcKwMDgnMTMuMiJF!5e0!3m2!1sen!2sin!4v123456789" 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125432.454323!2d79.137824!3d10.787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baabf5500000001%3A0x6d9f8d9f1f000000!2sThanjavur!5e0!3m2!1sen!2sin!4v1640000000000" 
                 width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
@@ -149,7 +149,6 @@
     </footer>
 
     <script>
-        // Initialize AOS Animations
         AOS.init({
             duration: 1000,
             once: true,
