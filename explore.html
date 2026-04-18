@@ -16,25 +16,28 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
         body { font-family: 'Inter', sans-serif; background-color: #0F0F0F; color: white; }
         
-        .neon-glow { text-shadow: 0 0 15px rgba(57, 255, 20, 0.6); }
-        .red-glow { text-shadow: 0 0 15px rgba(255, 49, 49, 0.6); }
+        /* Brand Red Accent: #E31E24 */
+        .red-glow { text-shadow: 0 0 15px rgba(227, 30, 36, 0.7); }
         
-        .btn-neon { background-color: #39FF14; color: black; transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-        .btn-neon:hover { background-color: #32e612; box-shadow: 0 0 25px #39FF14; transform: scale(1.05); }
+        .btn-red { background-color: #E31E24; color: white; transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .btn-red:hover { background-color: #c4191f; box-shadow: 0 0 25px #E31E24; transform: scale(1.05); }
         
-        .gallery-item { transition: all 0.5s ease; }
-        .gallery-item:hover { transform: scale(1.03); filter: brightness(1.1); }
+        .gallery-item { transition: all 0.5s ease; border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gallery-item:hover { transform: scale(1.02); border-color: #E31E24; filter: brightness(1.1); }
     </style>
 </head>
 <body class="overflow-x-hidden">
 
-    <nav class="fixed w-full z-[100] bg-black/90 border-b border-white/10 px-6 py-4 backdrop-blur-md">
+    <nav class="fixed w-full z-[100] bg-black/95 border-b border-white/10 px-6 py-4 backdrop-blur-md">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3 text-gray-400 hover:text-[#39FF14] transition font-medium">
+            <a href="index.html" class="flex items-center gap-3 text-gray-400 hover:text-[#E31E24] transition font-medium">
                 <i class="fa-solid fa-arrow-left"></i> Back to Home
             </a>
-            <div class="text-2xl font-black tracking-tighter italic">
-                POWER <span class="text-[#39FF14]">SMACK</span> <span class="text-sm text-gray-500 font-normal ml-2">STUDIO TOUR</span>
+            <div class="flex items-center gap-3">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNgGxi0YXD5yLBxNeZwaI6p5_ZX_6I792EIt3Ev=s1360-w1360-h1020-rw" alt="Power Smack Logo" class="h-10 md:h-12">
+                <div class="hidden sm:block text-2xl font-black tracking-tighter italic">
+                    POWER <span class="text-[#E31E24]">SMACK</span>
+                </div>
             </div>
         </div>
     </nav>
@@ -43,49 +46,49 @@
         
         <header class="text-center mb-20" data-aos="fade-down">
             <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tight mb-4">
-                Explore the <span class="text-[#39FF14] neon-glow">Arena</span>
+                Explore the <span class="text-[#E31E24] red-glow">Arena</span>
             </h1>
             <p class="text-xl text-gray-400 max-w-2xl mx-auto">
-                Step inside Thanjavur's largest fitness facility. 4,000 Sq. Ft. of pure motivation, premium gear, and dedicated training zones.
+                Thanjavur's largest 4,000 Sq. Ft. facility. Precision engineering meets raw power.
             </p>
         </header>
 
         <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
             
-            <div class="gallery-item group relative overflow-hidden rounded-2xl border border-white/10 bg-[#1A1A1A] h-96 shadow-lg" data-aos="fade-up" data-aos-delay="100">
-                <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAF_Y7Tn1t449B_htnx_cI8grXCmSS5oLb-3f9NrZ_7xUFHOXIirAn08AAto0LlRsUl_ydbThosZ3xTInuNoFKQY6yq1fzHlairYW-f4aYY7OCJOSFS9XEv9KJJiMbq2r658hUc=s1360-w1360-h1020-rw" alt="Premium Spin Bikes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-[#1A1A1A] h-96 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAF_Y7Tn1t449B_htnx_cI8grXCmSS5oLb-3f9NrZ_7xUFHOXIirAn08AAto0LlRsUl_ydbThosZ3xTInuNoFKQY6yq1fzHlairYW-f4aYY7OCJOSFS9XEv9KJJiMbq2r658hUc=s1360-w1360-h1020-rw" alt="Gym Cycle" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent p-6 flex flex-col justify-end">
-                    <h3 class="text-2xl font-bold uppercase text-[#39FF14]">Cardio Zone</h3>
-                    <p class="text-gray-300 text-sm mt-2">Premium indoor cycling arena for high-intensity endurance training.</p>
+                    <h3 class="text-2xl font-bold uppercase text-[#E31E24]">Cardio Studio</h3>
+                    <p class="text-gray-300 text-sm mt-2">High-performance gym cycles for intense endurance training.</p>
                 </div>
             </div>
 
-            <div class="gallery-item group relative overflow-hidden rounded-2xl border border-white/10 bg-[#1A1A1A] lg:col-span-2 h-96 shadow-lg" data-aos="fade-up" data-aos-delay="200">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipOChdcWBCsrAEXX-YituefTXatiHBDKrOuLoe7Y=s1360-w1360-h1020-rw" alt="Treadmill Row" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-[#1A1A1A] lg:col-span-2 h-96 shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipOChdcWBCsrAEXX-YituefTXatiHBDKrOuLoe7Y=s1360-w1360-h1020-rw" alt="Treadmill" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent p-6 flex flex-col justify-end">
-                    <h3 class="text-2xl font-bold uppercase text-[#39FF14]">Endurance Row</h3>
-                    <p class="text-gray-300 text-sm mt-2">State-of-the-art treadmills overlooking the main floor. The ultimate warm-up.</p>
+                    <h3 class="text-2xl font-bold uppercase text-[#E31E24]">Endurance Zone</h3>
+                    <p class="text-gray-300 text-sm mt-2">Premium treadmill rows designed for maximum fat burn and stamina.</p>
                 </div>
             </div>
 
-            <div class="gallery-item group relative overflow-hidden rounded-2xl border border-white/10 bg-[#1A1A1A] lg:col-span-3 h-[500px] shadow-lg" data-aos="fade-up" data-aos-delay="300">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipNeG_dsAwPk2OoI72hTFlicIWdKNNwjuPdC_9lT=s1360-w1360-h1020-rw" alt="Personal Training Suite" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <div class="gallery-item group relative overflow-hidden rounded-2xl bg-[#1A1A1A] lg:col-span-3 h-[500px] shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNeG_dsAwPk2OoI72hTFlicIWdKNNwjuPdC_9lT=s1360-w1360-h1020-rw" alt="Special Training Room" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent p-10 flex flex-col justify-end">
-                    <span class="inline-block bg-[#FF3131] text-white font-bold px-4 py-1 rounded-full text-xs uppercase mb-3 self-start shadow-md">Exclusive Zone</span>
-                    <h3 class="text-4xl font-black uppercase text-white red-glow">The Pro-Fit Suite</h3>
-                    <p class="text-xl text-gray-200 mt-3 max-w-3xl">Dedicated private training area for focused, one-on-one sessions with our elite trainers.</p>
+                    <span class="inline-block bg-[#E31E24] text-white font-bold px-4 py-1 rounded-full text-xs uppercase mb-3 self-start shadow-md">Trainer-Led Suite</span>
+                    <h3 class="text-4xl font-black uppercase text-white red-glow">The Pro-Training Zone</h3>
+                    <p class="text-xl text-gray-200 mt-3 max-w-3xl">Our exclusive room for one-on-one personal coaching and specialized fitness programs.</p>
                 </div>
             </div>
 
         </section>
 
         <section class="bg-[#1A1A1A] rounded-3xl p-12 text-center border border-white/10 shadow-xl" data-aos="zoom-in">
-            <h2 class="text-4xl font-black uppercase mb-6">Ready to see it in <span class="text-[#39FF14]">Person?</span></h2>
+            <h2 class="text-4xl font-black uppercase mb-6">Experience <span class="text-[#E31E24]">The Power</span></h2>
             <p class="text-lg text-gray-300 mb-10 max-w-xl mx-auto">
-                Pictures don't do the energy justice. Book your free tour and trial session today.
+                Step inside Thanjavur's most elite arena. Your first session is on us.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="tel:09500029243" class="btn-neon px-10 py-4 rounded-md font-black text-lg uppercase shadow-lg">Call to Book Tour</a>
+                <a href="tel:09500029243" class="btn-red px-10 py-4 rounded-md font-black text-lg uppercase shadow-lg">Call to Book Tour</a>
                 <a href="https://wa.me/919500029243" class="border border-white/20 px-10 py-4 rounded-md font-black text-lg uppercase hover:bg-white/10 transition backdrop-blur-sm">WhatsApp Inquiry</a>
             </div>
         </section>
@@ -93,11 +96,10 @@
     </main>
 
     <footer class="py-10 text-center text-gray-700 border-t border-white/5">
-        <p>© 2026 Power Smack Fitness Studio. Experience Excellence.</p>
+        <p>© 2026 Power Smack Fitness Studio. Build for Excellence.</p>
     </footer>
 
     <script>
-        // Initialize AOS Animations
         AOS.init({
             duration: 1200,
             once: true,
