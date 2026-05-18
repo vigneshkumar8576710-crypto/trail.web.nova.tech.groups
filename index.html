@@ -1,183 +1,223 @@
-export default function IronStarsGymLandingPage() {
-  return (
-    <div className="min-h-screen bg-black text-white font-sans">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 via-black to-black"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Stars Gym | Chennai's Ultimate Fitness Destination</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth scrolling for the whole page */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-black text-white font-sans antialiased selection:bg-red-600 selection:text-white overflow-x-hidden">
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <div className="inline-block px-4 py-2 rounded-full border border-red-500 text-red-400 text-sm mb-6">
-              Chennai's Ultimate Fitness Destination
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 via-black to-black pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div class="inline-block px-4 py-2 rounded-full border border-red-500 text-red-400 text-sm mb-6">
+                    Chennai's Ultimate Fitness Destination
+                </div>
+
+                <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6 tracking-tight">
+                    BUILD YOUR <span class="text-red-500">STRONGEST</span> SELF
+                </h1>
+
+                <p class="text-gray-300 text-lg mb-8 max-w-xl leading-relaxed">
+                    Premium fitness training, expert coaches, modern equipment, and a motivating environment built for transformation.
+                </p>
+
+                <div class="flex flex-wrap gap-4">
+                    <button type="button" class="bg-red-600 hover:bg-red-700 transition duration-200 px-8 py-4 rounded-2xl text-lg font-semibold shadow-2xl active:scale-95">
+                        Join Now
+                    </button>
+                    <button type="button" class="border border-white/20 hover:border-red-500 transition duration-200 px-8 py-4 rounded-2xl text-lg font-semibold active:scale-95">
+                        View Plans
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-3 gap-6 mt-12">
+                    <div>
+                        <h2 class="text-3xl font-bold text-red-500">5K+</h2>
+                        <p class="text-gray-400 text-sm">Members Trained</p>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-red-500">20+</h2>
+                        <p class="text-gray-400 text-sm">Fitness Coaches</p>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-red-500">24/7</h2>
+                        <p class="text-gray-400 text-sm">Support & Guidance</p>
+                    </div>
+                </div>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
-              BUILD YOUR <span className="text-red-500">STRONGEST</span> SELF
-            </h1>
-
-            <p className="text-gray-300 text-lg mb-8 max-w-xl leading-relaxed">
-              Premium fitness training, expert coaches, modern equipment, and a motivating environment built for transformation.
-            </p>
-
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-red-600 hover:bg-red-700 transition px-8 py-4 rounded-2xl text-lg font-semibold shadow-2xl">
-                Join Now
-              </button>
-
-              <button className="border border-white/20 hover:border-red-500 transition px-8 py-4 rounded-2xl text-lg font-semibold">
-                View Plans
-              </button>
+            <div class="relative" data-aos="zoom-in-up" data-aos-duration="1200">
+                <div class="absolute -inset-4 bg-red-600/20 blur-3xl rounded-full pointer-events-none"></div>
+                <img
+                    src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1400&auto=format&fit=crop"
+                    alt="Gym Workout Training Area"
+                    class="relative rounded-3xl shadow-2xl object-cover h-[500px] md:h-[650px] w-full"
+                />
             </div>
-
-            <div className="grid grid-cols-3 gap-6 mt-12">
-              <div>
-                <h2 className="text-3xl font-bold text-red-500">5K+</h2>
-                <p className="text-gray-400 text-sm">Members Trained</p>
-              </div>
-
-              <div>
-                <h2 className="text-3xl font-bold text-red-500">20+</h2>
-                <p className="text-gray-400 text-sm">Fitness Coaches</p>
-              </div>
-
-              <div>
-                <h2 className="text-3xl font-bold text-red-500">24/7</h2>
-                <p className="text-gray-400 text-sm">Support & Guidance</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative">
-            <div className="absolute -inset-4 bg-red-600/20 blur-3xl rounded-full"></div>
-
-            <img
-              src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1400&auto=format&fit=crop"
-              alt="Gym Workout"
-              className="relative rounded-3xl shadow-2xl object-cover h-[650px] w-full"
-            />
-          </div>
         </div>
-      </section>
+    </section>
 
-      {/* Features */}
-      <section className="py-24 px-6 max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black mb-4">
-            WHY CHOOSE <span className="text-red-500">IRON STARS</span>
-          </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Everything you need to transform your body, mindset, and lifestyle.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {[
-            {
-              title: 'Modern Equipment',
-              desc: 'Train with world-class machines and professional fitness infrastructure.'
-            },
-            {
-              title: 'Certified Trainers',
-              desc: 'Experienced fitness experts focused on real transformation.'
-            },
-            {
-              title: 'Nutrition Guidance',
-              desc: 'Personalized diet and health guidance for maximum results.'
-            },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="bg-zinc-900 border border-white/5 hover:border-red-500/40 transition rounded-3xl p-8 shadow-xl"
-            >
-              <div className="w-14 h-14 rounded-2xl bg-red-600/20 flex items-center justify-center text-red-500 text-2xl mb-6">
-                ⚡
-              </div>
-
-              <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
-              <p className="text-gray-400 leading-relaxed">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Membership Plans */}
-      <section className="bg-zinc-950 py-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black mb-4">
-              MEMBERSHIP PLANS
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="800">
+            <h2 class="text-4xl md:text-5xl font-black mb-4">
+                WHY CHOOSE <span class="text-red-500">IRON STARS</span>
             </h2>
-            <p className="text-gray-400">
-              Flexible plans for every fitness journey.
+            <p class="text-gray-400 max-w-2xl mx-auto">
+                Everything you need to transform your body, mindset, and lifestyle.
             </p>
-          </div>
+        </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: 'Starter',
-                price: '₹999',
-                features: ['Gym Access', 'Basic Training', 'Locker Access']
-              },
-              {
-                name: 'Pro',
-                price: '₹2499',
-                features: ['Personal Trainer', 'Diet Plan', 'Premium Access']
-              },
-              {
-                name: 'Elite',
-                price: '₹4999',
-                features: ['1-on-1 Coaching', 'Advanced Programs', 'VIP Support']
-              }
-            ].map((plan, index) => (
-              <div
-                key={index}
-                className="bg-black border border-white/10 hover:border-red-500 transition rounded-3xl p-8"
-              >
-                <h3 className="text-3xl font-bold mb-4">{plan.name}</h3>
-                <div className="text-5xl font-black text-red-500 mb-6">{plan.price}</div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-zinc-900 border border-white/5 hover:border-red-500/40 transition duration-300 rounded-3xl p-8 shadow-xl"
+                 data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+                <div class="w-14 h-14 rounded-2xl bg-red-600/20 flex items-center justify-center text-red-500 text-2xl mb-6">
+                    <span role="img" aria-label="lightning">⚡</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Modern Equipment</h3>
+                <p class="text-gray-400 leading-relaxed">Train with world-class machines and professional fitness infrastructure.</p>
+            </div>
 
-                <ul className="space-y-4 mb-8">
-                  {plan.features.map((feature, i) => (
-                    <li key={i} className="flex items-center gap-3 text-gray-300">
-                      <span className="text-red-500">✔</span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+            <div class="bg-zinc-900 border border-white/5 hover:border-red-500/40 transition duration-300 rounded-3xl p-8 shadow-xl"
+                 data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                <div class="w-14 h-14 rounded-2xl bg-red-600/20 flex items-center justify-center text-red-500 text-2xl mb-6">
+                    <span role="img" aria-label="star">⭐</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Certified Trainers</h3>
+                <p class="text-gray-400 leading-relaxed">Experienced fitness experts focused on real transformation.</p>
+            </div>
 
-                <button className="w-full bg-red-600 hover:bg-red-700 transition py-4 rounded-2xl font-semibold text-lg">
-                  Choose Plan
+            <div class="bg-zinc-900 border border-white/5 hover:border-red-500/40 transition duration-300 rounded-3xl p-8 shadow-xl"
+                 data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+                <div class="w-14 h-14 rounded-2xl bg-red-600/20 flex items-center justify-center text-red-500 text-2xl mb-6">
+                    <span role="img" aria-label="apple">🍎</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Nutrition Guidance</h3>
+                <p class="text-gray-400 leading-relaxed">Personalized diet and health guidance for maximum results.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-zinc-950 py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-down" data-aos-duration="800">
+                <h2 class="text-4xl md:text-5xl font-black mb-4">
+                    MEMBERSHIP PLANS
+                </h2>
+                <p class="text-gray-400">
+                    Flexible plans for every fitness journey.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-black border border-white/10 hover:border-red-500 transition duration-300 rounded-3xl p-8 flex flex-col justify-between"
+                     data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-4">Starter</h3>
+                        <div class="text-5xl font-black text-red-500 mb-6">₹999</div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3 text-gray-300"><span class="text-red-500">✔</span> Gym Access</li>
+                            <li class="flex items-center gap-3 text-gray-300"><span class="text-red-500">✔</span> Basic Training</li>
+                            <li class="flex items-center gap-3 text-gray-300"><span class="text-red-500">✔</span> Locker Access</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="w-full bg-red-600 hover:bg-red-700 transition duration-200 py-4 rounded-2xl font-semibold text-lg mt-auto">
+                        Choose Plan
+                    </button>
+                </div>
+
+                <div class="bg-black border border-white/10 hover:border-red-500 transition duration-300 rounded-3xl p-8 flex flex-col justify-between ring-2 ring-red-600/50 relative md:-top-4"
+                     data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-3xl font-bold">Pro</h3>
+                            <span class="bg-red-600 text-xs uppercase font-extrabold px-3 py-1 rounded-full tracking-wider">Popular</span>
+                        </div>
+                        <div class="text-5xl font-black text-red-500 mb-6">₹2499</div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3 text-gray-300"><span class="text-red-500">✔</span> Personal Trainer</li>
+                            <li class="flex items-center gap-3 text-gray-300"><span class="text-red-500">✔</span> Diet Plan</li>
+                            <li class="flex items-center gap-3 text-gray-300"><span class="text-red-500">✔</span> Premium Access</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="w-full bg-red-600 hover:bg-red-700 transition duration-200 py-4 rounded-2xl font-semibold text-lg mt-auto shadow-xl shadow-red-600/20">
+                        Choose Plan
+                    </button>
+                </div>
+
+                <div class="bg-black border border-white/10 hover:border-red-500 transition duration-300 rounded-3xl p-8 flex flex-col justify-between"
+                     data-aos="fade-left" data-aos-delay="100" data-aos-duration="800">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-4">Elite</h3>
+                        <div class="text-5xl font-black text-red-500 mb-6">₹4999</div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3 text-gray-300"><span class="text-red-500">✔</span> 1-on-1 Coaching</li>
+                            <li class="flex items-center gap-3 text-gray-300"><span class="text-red-500">✔</span> Advanced Programs</li>
+                            <li class="flex items-center gap-3 text-gray-300"><span class="text-red-500">✔</span> VIP Support</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="w-full bg-red-600 hover:bg-red-700 transition duration-200 py-4 rounded-2xl font-semibold text-lg mt-auto">
+                        Choose Plan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 text-center max-w-5xl mx-auto" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="bg-gradient-to-r from-red-600 to-red-800 rounded-[40px] p-12 shadow-2xl relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tight">
+                    YOUR TRANSFORMATION STARTS TODAY
+                </h2>
+                <p class="text-lg text-red-100 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    Join a powerful fitness community and achieve the body and confidence you've always wanted.
+                </p>
+                <button type="button" class="bg-white text-black hover:scale-105 transition duration-200 px-10 py-5 rounded-2xl font-bold text-lg shadow-2xl active:scale-95">
+                    Start Your Journey
                 </button>
-              </div>
-            ))}
-          </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      {/* Transformation CTA */}
-      <section className="py-24 px-6 text-center max-w-5xl mx-auto">
-        <div className="bg-gradient-to-r from-red-600 to-red-800 rounded-[40px] p-12 shadow-2xl">
-          <h2 className="text-4xl md:text-6xl font-black mb-6">
-            YOUR TRANSFORMATION STARTS TODAY
-          </h2>
+    <footer class="border-t border-white/10 py-12 px-6 text-center text-gray-500 bg-black">
+        <h3 class="text-2xl font-black text-white mb-2 tracking-wider">IRON STARS GYM</h3>
+        <p class="mb-4 text-sm">Transforming Bodies. Building Confidence.</p>
+        <p class="text-xs">&copy; 2026 Iron Stars Gym. All Rights Reserved.</p>
+    </footer>
 
-          <p className="text-lg text-red-100 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Join a powerful fitness community and achieve the body and confidence you've always wanted.
-          </p>
-
-          <button className="bg-white text-black hover:scale-105 transition px-10 py-5 rounded-2xl font-bold text-lg shadow-2xl">
-            Start Your Journey
-          </button>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="border-t border-white/10 py-10 px-6 text-center text-gray-500">
-        <h3 className="text-2xl font-black text-white mb-2">IRON STARS GYM</h3>
-        <p>Transforming Bodies. Building Confidence.</p>
-      </footer>
-    </div>
-  )
-}
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Start the engine!
+        AOS.init({
+            once: true, // Animation runs only once when scrolling down (prevents stuttering)
+            mirror: false // Keeps performance ultra-fast
+        });
+    </script>
+</body>
+</html>
 
